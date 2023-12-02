@@ -2,6 +2,7 @@ import openai
 
 api_key = "YOUR_API_KEY"
 
+
 def send_request(message):
     openai.api_key = api_key
     chat_completion = openai.ChatCompletion.create(

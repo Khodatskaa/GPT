@@ -37,7 +37,7 @@ user_input = ft.TextField(
 )
 
 gpt_output = ft.TextField(
-    label="Output GPT",
+    label="Output GPT_core",
     color="#4682B4",
     multiline=True,
     max_lines=15,
@@ -90,7 +90,7 @@ def main(page: ft.Page):
     user_input_row = create_user_input_row()
 
     def click_button():
-        gpt_output.value = f"Mock GPT response for: {user_input.value}"
+        gpt_output.value = f"Mock GPT_core response for: {user_input.value}"
         gpt_output.update()
         page.update()
 
